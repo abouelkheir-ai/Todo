@@ -18,8 +18,6 @@ void main() async {
   var box = await Hive.openBox<Note>('notes');
 
   await box.clear();
-  // await box2.clear();
-  // print(box.values.length);
 
   runApp(MyApp(
     appRouter: AppRouter(),
